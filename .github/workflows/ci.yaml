@@ -25,6 +25,7 @@ jobs:
       - name: Set up workspace
         run: |
           ls -la
+          ls -la docker
 
       # Dockerイメージのビルドとプッシュ
       - name: Build and push Docker image
