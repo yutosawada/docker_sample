@@ -62,8 +62,9 @@ COPY --from=builder /ros2_ws/install ros2_ws/install
 
 # Docker用エントリーポイントスクリプトをコピー
 # Copy the Docker entrypoint script from the docker/scripts directory
-COPY ./docker/scripts/entrypoint.sh /root/entrypoint.sh
-RUN chmod +x /root/entrypoint.sh
+
+#COPY ./docker/scripts/entrypoint.sh /root/entrypoint.sh
+#RUN chmod +x /root/entrypoint.sh
 
 WORKDIR /root
 
