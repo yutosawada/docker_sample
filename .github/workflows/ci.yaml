@@ -21,6 +21,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up workspace
+        run: |
+          ls -la
 
       # Dockerイメージのビルドとプッシュ
       - name: Build and push Docker image
